@@ -1,17 +1,14 @@
+'use strict'
 const fs = require('fs')
 const chalk = require('chalk');
 
 const addNote = (title, body) => {
     const notes = loadNotes()
-    // const duplicateNotes = notes.filter( (note)=>  note.title === title
-    // )
+
 
     const duplicateNote = notes.find((note) => note.title === title)
 
-    // const duplicateNotes = notes.filter(function (note) {
-    //     return note.title === title
-    // })
-  
+
 
     if (!duplicateNote) {
         notes.push({
@@ -42,10 +39,9 @@ const loadNotes = () => {
 
 
 const removeNote = (title) => {
-    // console.log(title);
 
     const notes = loadNotes();
-    // console.log('before', notes);
+
     let keptNotes = notes.filter((item) =>
 
         item.title !== title
@@ -57,9 +53,6 @@ const removeNote = (title) => {
     } else {
         console.log(chalk.bgRed('not found'));
     }
-    // }
-
-    // console.log('after', notes);
 }
 
 
@@ -77,7 +70,6 @@ const readNote = (title) => {
     const notes = loadNotes();
 
     const readNotes = notes.find(item => item.title === title)
-    // console.log(readNotes);
     if (readNotes) {
         console.log(chalk.red.inverse(readNotes.title));
         console.log(chalk.inverse(readNotes.body));
@@ -91,6 +83,8 @@ const savedNotes = (notes) => {
     const dataJSON = JSON.stringify(notes);
     fs.writeFileSync('notes.json', dataJSON);
 }
+
+
 
 module.exports = {
     'addNote': addNote,
