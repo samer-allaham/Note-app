@@ -1,4 +1,4 @@
-# Note app
+# Notes app
 
 ## Create, Remove, List, and Read notes from your own list of notes using the terminal.
 
