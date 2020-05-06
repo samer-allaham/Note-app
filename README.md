@@ -10,4 +10,7 @@
 
 ### Run the command: node app.js read --title="example" to read a specific item.
 
-#### Note: you need to install the depencies required also you need to have node and npm installed on your computer.
+### Run the command: node app.js --help to see the available options with their description
+
+
+### Note: you need to install the required depencies also you need to have node and npm installed on your computer.

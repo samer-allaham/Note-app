@@ -1,13 +1,10 @@
 'use strict';
-// const add = require('./utils.js')
-// const sum = add(4,5)
-// console.log(sum);
 
 // colorise logs
 const chalk = require('chalk');
 //parsing
 const yargs = require('yargs');
-//modulaziation
+//modularization
 const notes = require('./notes.js');
 
 //customize yargs version
@@ -98,5 +95,4 @@ yargs.command({
 //to show the output parsed from yargs
 yargs.parse();
 
-// console.log(yargs.argv);
 
