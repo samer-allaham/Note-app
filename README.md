@@ -2,7 +2,7 @@
 
 ## Create, Remove, List, and Read notes from your own list of notes using the terminal.
 
-### run the command: <node app.js add --title="example" --body="example"> to add items to your list.
+### Run the command: <node app.js add --title="example" --body="example"> to add items to your list.
 
 ### Run the command: <node app.js remove --title="example"> to remove an  item based on the title.
 
