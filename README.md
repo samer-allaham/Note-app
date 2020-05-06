@@ -9,3 +9,5 @@
 ### Run the command: node app.js list to list the items in your note book.
 
 ### Run the command: node app.js read --title="example" to read a specific item.
+
+#### Note: you need to install the depencies required also you need to have node and npm installed on your computer.
